@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:elevation="5dp"
+    app:cardCornerRadius="15dp"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:backgroundTint="@color/black_500">
+
+        <ImageView
+            android:id="@+id/card_profile_view"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/notification_icon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:backgroundTint="@color/black_500"/>
+
+        <TextView
+            android:id="@+id/card_username_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:fontFamily="@font/itim"
+            android:textStyle="bold"
+            android:textColor="@color/white_800"
+            android:text="Name"
+            android:backgroundTint="@color/black_500"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/card_profile_view"
+            app:layout_constraintStart_toEndOf="@id/card_profile_view"
+            app:layout_constraintTop_toTopOf="@id/card_profile_view" />
+
+
+        <TextView
+            android:id="@+id/card_assignment_text_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="20dp"
+            android:maxLines="6"
+            android:textSize="14sp"
+            android:textColor="@color/black_200"
+            android:text="Message"
+            android:layout_marginBottom="5dp"
+            app:layout_constraintBottom_toTopOf="@id/card_button_layout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/card_profile_view"
+            app:layout_constraintTop_toBottomOf="@id/card_profile_view"
+            android:backgroundTint="@color/black_500"/>
+
+        <LinearLayout
+            android:id="@+id/card_button_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/card_assignment_text_view"
+            app:layout_constraintStart_toStartOf="@id/card_assignment_text_view"
+            app:layout_constraintEnd_toEndOf="@id/card_assignment_text_view"
+            android:backgroundTint="@color/black_500"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="10dp"
+            >
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/card_send_email_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/orange_700"
+                android:textColor="@color/orange_900"
+                android:text="Send Email"
+                android:fontFamily="@font/itim"
+
+                />
+
+            <TextView
+                android:id="@+id/card_email_view"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="email"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:textColor="@color/black_200"
+                android:backgroundTint="@color/black_500"
+                android:letterSpacing="0.05"
+                android:maxLines="1"
+                android:ellipsize="end"/>
+
+            <ImageButton
+                android:id="@+id/card_copy_button"
+                android:src="@drawable/copy"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:backgroundTint="@color/black_500"
+                android:padding="4dp"
+                android:scaleType="centerCrop"/>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

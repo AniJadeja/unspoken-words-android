@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Unspoken Words</string>
+    <string name="username">username</string>
+    <string name="password">password</string>
+    <string name="login">login</string>
+    <string name="instruction">Admin panel for the author\nof this project only.</string>
+    <string name="greetings">Hello, Admin</string>
+    <string name="slogan">new messages</string>
+    <string name="fadinBar_description">this bar will fade the messages</string>
+    <string name="category_1">Unread</string>
+    <string name="category_2">Read</string>
+    <string name="channel_name">MESSAGE_CHANNEL</string>
+    <string name="channel_description">This channel will show new messages</string>
+    <string name="channel_id">MSG_01</string>
+    <string name="open_messages">Open</string>
+</resources>
